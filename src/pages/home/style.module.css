@@ -1,0 +1,22 @@
+.information {
+  border-radius: 160px 0px;
+  border: 0.25rem solid #fff;
+  background: #292f36;
+  box-shadow: -4px -4px 2px 0px #12f7d6;
+
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.about {
+  align-self: self-start;
+  border-radius: 40px 0px;
+  border: 4px solid #12f7d6;
+  background: #292f36;
+  padding: 1rem 2.5rem;
+  font-size: 4rem;
+  text-transform: capitalize;
+  font-family: "Ubuntu";
+}
