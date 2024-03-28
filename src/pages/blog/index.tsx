@@ -2,8 +2,6 @@ import Article from "@/components/article";
 import Title from "@/components/title";
 
 const Blog = () => {
-  console.log(Array(5));
-
   return (
     <div className="flex flex-col items-center gap-16">
       <Title

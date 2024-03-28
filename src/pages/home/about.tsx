@@ -7,11 +7,11 @@ const About = () => {
   return (
     <div
       id="about"
-      className="bg-[#1A1E23] p-32 flex flex-col gap-32 text-white"
+      className="bg-[#1A1E23] p-32 max-md:p-16 flex flex-col gap-32 text-white"
     >
       <Title />
 
-      <div className="flex gap-32 pl-32 pr-16">
+      <div className="flex gap-32 pl-32 pr-16 max-xl:flex-col max-xl:items-center max-md:p-0 max-md:gap-16">
         <div className="flex flex-col gap-16">
           <div className={styles.about}>About Me</div>
           <div className="bg-[#292F36] py-6 px-10 flex flex-col gap-4 rounded-[2.5rem]">

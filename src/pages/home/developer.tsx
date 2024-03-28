@@ -35,11 +35,14 @@ const Developer = () => {
   ];
 
   return (
-    <div id="" className="m-32 mt-16 flex flex-col gap-16 text-white">
+    <div
+      id=""
+      className="m-32 max-md:m-16 mt-16 flex flex-col gap-16 text-white"
+    >
       <h1 className="capitalize text-[#98FAEC] self-center text-8xl ubuntu">
         Developer
       </h1>
-      <div className="flex justify-between mx-32 gap-[128px]">
+      <div className="flex justify-between gap-32 max-xl:gap-16 max-xl:flex-col items-center">
         <div className={styles.information}>
           <div className="flex flex-col items-center">
             <div className="border-[3px] border-[#12F7D6] rounded-full w-24 aspect-square mb-4"></div>
@@ -62,13 +65,13 @@ const Developer = () => {
           </div>
         </div>
 
-        <div className="flex gap-2 items-center">
+        <div className="flex gap-2 items-center max-md:flex-col max-md:gap-16">
           <div className="flex flex-col gap-8">
             <div className="flex flex-col text-[4rem] font-medium">
               <h1>Hey</h1>
               <div className="flex gap-3">
                 <h1>I'm</h1>
-                <h1 className="text-[#12F7D6]">Minh Tân,</h1>
+                <h1 className="text-[#12F7D6]">Tân,</h1>
               </div>
               <h1>Font-end Developer</h1>
             </div>

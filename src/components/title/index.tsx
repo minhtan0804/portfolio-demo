@@ -11,7 +11,7 @@ const Title = ({
 }) => {
   return (
     <div className="flex flex-col items-center">
-      <div className="flex flex-col">
+      <div className="flex flex-col max-md:hidden">
         <LuMouse color="#12F7D6" size={32} />
         <AiOutlineDash color="#FFFFFF" className="rotate-90 mt-2" size={32} />
         <AiOutlineDash color="#FFFFFF" className="rotate-90" size={32} />

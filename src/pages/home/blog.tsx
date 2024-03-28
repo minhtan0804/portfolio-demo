@@ -5,7 +5,7 @@ const Blog = () => {
   return (
     <div
       id="blogs"
-      className="p-32 flex flex-col items-center gap-16 bg-[#1A1E23] text-white"
+      className="p-32 max-md:p-16 flex flex-col items-center gap-16 bg-[#1A1E23] text-white"
     >
       <Title
         description={

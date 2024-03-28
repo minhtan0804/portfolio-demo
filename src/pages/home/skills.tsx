@@ -10,12 +10,12 @@ import {
 
 const Skills = () => {
   return (
-    <div id="skills" className="p-32 flex flex-col items-center">
+    <div id="skills" className="p-32 max-md:p-16 flex flex-col items-center">
       <Title description={"I am striving to never stop learning and improving"}>
         Skills
       </Title>
 
-      <div className="mt-16 flex gap-32">
+      <div className="mt-16 flex gap-32 max-md:gap-x-8">
         <div className="flex flex-1 rounded-lg overflow-hidden">
           <div className="w-2 bg-[#0C73B8]"></div>
           <div className="flex py-4 px-6 flex-col items-center bg-[#98FAEC]">
@@ -34,7 +34,7 @@ const Skills = () => {
         </div>
       </div>
 
-      <div className="mt-20 grid grid-cols-4 gap-x-32">
+      <div className="mt-20 grid grid-cols-4 gap-x-32 max-md:grid-cols-2 max-md:gap-y-8">
         <div className="flex flex-col gap-6 items-center text-[#E54F26] text-[2rem] font-medium">
           <div className="p-10 rounded-full bg-[#E54F26]">
             <IoLogoHtml5 color="#FFFFFF" />

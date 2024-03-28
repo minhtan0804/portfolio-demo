@@ -5,11 +5,11 @@ const Contact = () => {
   return (
     <div
       id="contact"
-      className="px-32 py-24 flex flex-col items-center bg-[#43454D] text-white"
+      className="px-32 py-24 max-md:p-8 flex flex-col items-center bg-[#43454D] text-white"
     >
       <Title description={"I’m currently available for work"}>Contact</Title>
 
-      <div className="flex flex-col items-center gap-16 mt-32 w-2/3">
+      <div className="flex flex-col items-center gap-16 mt-32 w-2/3 max-md:mt-16 max-md:w-3/4">
         <div className="border-2 rounded-tl-[2rem] rounded-br-[2rem] border-[#12F7D6] px-10 py-4 text-[2rem] text-[#12F7D6]">
           Send me a message
         </div>

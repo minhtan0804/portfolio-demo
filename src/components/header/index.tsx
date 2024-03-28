@@ -24,8 +24,6 @@ const Header = ({ socials }: { socials: TSocial[] }) => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  console.log(pathname);
-
   const paths: TPath[] = [
     {
       name: "Home",
@@ -38,7 +36,7 @@ const Header = ({ socials }: { socials: TSocial[] }) => {
   ];
 
   return (
-    <div className="px-8 py-6 flex items-center justify-between mx-32 border-b-[1px] border-[#43454D]">
+    <div className="px-8 py-6 max-sm:py-0 max-sm:px-6 max-md:mx-8 flex items-center justify-between mx-32 border-b-[1px] border-[#43454D]">
       <Logo />
 
       <div className="flex gap-16 items-center">
@@ -58,7 +56,7 @@ const Header = ({ socials }: { socials: TSocial[] }) => {
 
         <MdOutlineSearch size={20} color="#FFFFFF" />
 
-        <div className="flex gap-8">
+        <div className="flex gap-8 max-sm:hidden">
           {socials &&
             socials.map((social) => (
               <a key={social.href} href={social.href} target="_blank" rel="">

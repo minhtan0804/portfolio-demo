@@ -3,7 +3,7 @@ import React from "react";
 
 const Footer = ({ socials }: { socials: TSocial[] }) => {
   return (
-    <div className="px-32 py-4 flex justify-between items-center ubuntu text-white">
+    <div className="px-32 py-4 flex justify-between items-center ubuntu text-white max-md:flex-col max-md:gap-2 max-md:justify-center">
       <span>© 2023 SinanTokmak. All rights reserved.</span>
       <div>
         <span>Privacy Policy</span>
