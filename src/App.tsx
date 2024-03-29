@@ -13,11 +13,11 @@ function App() {
     },
     {
       icon: <FaTwitter size={20} color="#12F7D6" />,
-      href: "https://githug.com/minhtan0804",
+      href: "1",
     },
     {
       icon: <FaLinkedin size={20} color="#12F7D6" />,
-      href: "https://githug.com/minhtan0804",
+      href: "2",
     },
   ];
 

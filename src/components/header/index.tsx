@@ -36,7 +36,7 @@ const Header = ({ socials }: { socials: TSocial[] }) => {
   ];
 
   return (
-    <div className="px-8 py-6 max-sm:py-0 max-sm:px-6 max-md:mx-8 flex items-center justify-between mx-32 border-b-[1px] border-[#43454D]">
+    <div className="px-8 py-6 max-md:px-0 max-sm:py-0 max-sm:px-6 max-md:mx-8 flex items-center justify-between mx-32 border-b-[1px] border-[#43454D]">
       <Logo />
 
       <div className="flex gap-16 items-center">
@@ -54,7 +54,9 @@ const Header = ({ socials }: { socials: TSocial[] }) => {
             ))}
         </div>
 
-        <MdOutlineSearch size={20} color="#FFFFFF" />
+        <div className="w-40 max-xl:w-24 max-md:w-fit rounded-full bg-white text-black flex flex-row-reverse px-2 py-1 max-md:p-0 max-md:bg-transparent max-md:text-white">
+          <MdOutlineSearch size={20} />
+        </div>
 
         <div className="flex gap-8 max-sm:hidden">
           {socials &&

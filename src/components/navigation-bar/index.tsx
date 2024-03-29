@@ -5,10 +5,10 @@ import { useLocation } from "react-router-dom";
 
 const NavBar = () => {
   const location = useLocation();
-  const [hash, setHash] = useState<string>();
+  const [hash, setHash] = useState<string>("#");
 
   useEffect(() => {
-    setHash(location.hash);
+    setHash(location.hash ?? "#");
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
@@ -39,9 +39,10 @@ const NavBar = () => {
     <div className="fixed top-20 left-4 w-fit py-2 px-3 flex flex-col gap-6 rounded-full border-[1px] bg-[#292F36]">
       {items.map((item) => (
         <a
-          href={`${item.hash ?? "#"}`}
+          key={item.hash}
+          href={`${item.hash}`}
           onClick={() => setHash(item.hash)}
-          className={`p-2 rounded-full text-white ${hash === item.hash && "bg-white !text-black"} cursor-pointer`}
+          className={`p-2 rounded-full text-white ${(hash === item.hash || (hash === "" && item.hash === "#")) && "bg-white !text-black"} cursor-pointer`}
         >
           {item.icon}
         </a>
